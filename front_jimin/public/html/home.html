@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catmom</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="cat">
+        
+    </div>
+    <div class="backgroundImg">
+        <div class="center">
+            <span class="title">LOGIN</span><br>
+
+            <form class="loginform" action="http://localhost:3000/login" method="post">
+                <!--login 후 이동-->
+                    <input type="text" name="_id" id="id"
+                    placeholder="아이디" class="input">
+                    <input type="password" name="password" id="password"
+                    placeholder="비밀번호" class="input"><br>
+                
+                <!--home으로 이동-->
+                <input type="submit" value="LOGIN" class="submit">
+
+                <!--join으로 이동-->
+                <input type="button" value="JOIN" class="submit"
+                onclick="location.href='join'">
+            </form>
+
+            
+        </div>
+    </div>
+</body>
+</html>
