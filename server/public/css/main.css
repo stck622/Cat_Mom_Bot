@@ -1,0 +1,143 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap);
+
+body{ /* 수정 완료 = 함부로 건드리지 말자 */
+    font-family: 'hanna';
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    height: 3.5em;
+}
+
+.top{ /* 수정 완료 = 함부로 건드리지 말자 */
+    /* 상단바 */
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+.menu-bar{ /* 수정 완료 = 함부로 건드리지 말자 */
+    /* 메뉴바 */
+    position: absolute;
+    display: block;
+    width: 5em;
+    height: 100%;
+    transform: translate(0%, +70px);
+    background-color: rgba(0, 0, 0, 0.897);
+
+    overflow:hidden;
+    -webkit-transition:width .05s linear;
+    transition:width .05s linear;
+
+}
+.menu-bar:hover{ /* 수정 완료 = 함부로 건드리지 말자 */
+    /* 메뉴바 */
+    position: absolute;
+    display: block;
+    width: 10em;
+    height: 100%;
+    transform: translate(0%, +70px);
+    background-color: rgba(0, 0, 0, 0.897);
+}
+.menu-bar li {
+    position: relative;
+    display: block;
+    width: 160px;
+}
+.menu-bar li>a {
+    position: relative;
+    display: table;
+    color: rgb(204, 204, 204);
+    font-size: 20px;
+    margin-top: 10px;
+
+    -webkit-transform:translateZ(0) scale(1,1);
+    -webkit-transition:all .1s linear;
+    transition:all .1s linear;
+}
+.menu-bar li:hover>a{
+    color:#fff;
+    background-color:#ffbd43b2;
+}
+.menu-bar li:active{
+    background-color: #000000;
+}
+
+.bar_icon{
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.bar_text{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 120px;
+    padding-right: 10px;
+}
+
+.backgroundImg{ /* 수정 완료 = 함부로 건드리지 말자 */
+    /* 배경 */
+    margin-top: -8px;
+    margin-left: -8px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.infotext{
+    display: block;
+    font-family: 'Do Hyeon';
+    margin-top: 4em;
+    font-size: 1.5em;
+}
+
+.location{
+    position: absolute;
+    background-size: 4em 4em;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-left: -29px;
+    width: 5em;
+    height: 5em;
+    background-image: url(../image/location.png);
+    background-color: inherit;
+    border: inherit;
+}
+
+.location:hover{
+    position: absolute;
+    background-size: 4em 4em;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-left: -29px;
+    width: 5em;
+    height: 5em;
+    background-image: url(../image/location_hover.png);
+    background-color: inherit;
+    border: inherit;
+}
+
+.maininfo{
+    display: absolute;
+    background-image: url(../image/캡처.PNG);
+    background-size: 520px;
+    width: 520px;
+    height: 520px;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    margin-left: 33%;
+}

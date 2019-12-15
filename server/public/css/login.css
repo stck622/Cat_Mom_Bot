@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+body{
+    background-color: rgb(194, 194, 194);
+}
+
+.backgroundImg{
+    width: 10%;
+    height: 10%;
+    text-align: center;   
+}
+.center{
+    font-family: 'Hanna', serif;
+    background-image: url("../image/white.PNG");
+    width: 300px;
+    height: 350px;
+    padding-top: 50px;                                                                   
+    font-size:3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #521e1e;
+    z-index: 2;
+    text-align: center;
+    border: 3px solid rgb(61, 61, 61);
+}
+
+.input{
+    border-color: rgb(187, 187, 187);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.submit{
+    margin-top: 30px;
+    color: #000000;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+.submit:hover{
+    color : #18152d;
+    background: #c0c0c0;
+}
+
+h2{
+    margin-top: 25px;
+}
+
+.loginform{
+    margin-top: 40px;
+}
+
+.cat{
+    animation: catfade 2s;
+    -webkit-animation: catfade 2s;
+    background-image: url("../image/cat1.PNG");
+    background-repeat: no-repeat;
+    background-size: 120px;
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;                                                                   
+    font-size:3rem;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #521e1e;
+    z-index: 2;
+    text-align: center;
+}
+
+@keyframes fadein{
+    from{
+        opacity:  0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes catfade{
+    from{
+        opacity:  0;
+    }
+    to{
+        opacity: 1;
+    }
+}
