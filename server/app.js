@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var joinRouter = require('./routes/join');
 var accountant = require('./routes/accountant');
 var mapRouter = require('./routes/map');
 var logRouter = require('./routes/savecatlog');
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/login', loginRouter);
+app.use('/join', joinRouter);
 app.use('/users', usersRouter);
 app.use('/accountant', accountant);
 app.use('/map', mapRouter);
