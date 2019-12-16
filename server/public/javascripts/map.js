@@ -35,7 +35,7 @@ fetch(API_SRC).then(function (response) {
             var marker = new kakao.maps.Marker({
                 map: map, 
                 position: new kakao.maps.LatLng(data[i]["wido"], data[i]["gyungdo"]),
-                title: "test", 
+                title: data[i]["pk"]+"번 Bot", 
                 image: markerImage
             });
         }
