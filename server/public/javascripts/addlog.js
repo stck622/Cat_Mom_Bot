@@ -11,9 +11,9 @@ fetch(API_SRC).then(function (response) {
         const tdlog = document.createElement("td");
         const tdimg = document.createElement("td");
     
-        tdnum.innerText = data[0]["botnumber"];
-        tdlog.innerText = data[0]["time"];
-        tdimg.innerHTML = data[0]["imagepath"];
+        tdnum.innerText = data[i]["botnumber"];
+        tdlog.innerText = data[i]["time"];
+        tdimg.innerHTML = "<img src = "+data[i]["imagepath"]+">";
         tr.appendChild(tdnum);
         tr.appendChild(tdlog);
         tr.appendChild(tdimg);

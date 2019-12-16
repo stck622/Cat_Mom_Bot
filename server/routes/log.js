@@ -35,12 +35,12 @@ router.get('/data', function(req, res, next) {
   if(logs.botnumber != undefined){
     connection.query('INSERT INTO catmom.catlog(botnumber, time, imagepath) values(?, ?, ?)', [logs.botnumber, logs.time, logs.imagepath], function(error, results, fields) {
       console.log(results);
-      res.end('저장해쏘');
+      res.end('200');
     });
   }
   else{
     console.log('안들어옴');
-    res.end('안들어옴');
+    res.end('400');
   }
   
 });
