@@ -3,7 +3,7 @@ const mysql = require('mysql');
 var router = express.Router();
 
 var connection = mysql.createConnection({
-    host     : 'localhost',    // 호스트 주소
+    host     : '10.80.161.44',    // 호스트 주소
     user     : 'root',           // mysql user
     password : '1234',       // mysql password
  //   insecureAuth : true,
