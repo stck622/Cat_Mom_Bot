@@ -1,0 +1,13 @@
+table{
+    width: 70%;
+    margin-left: 20%;
+}
+
+table, th, td {
+    border: 1px solid #bcbcbc;
+    text-align: center;
+}
+
+img{
+    width: 100px;
+}

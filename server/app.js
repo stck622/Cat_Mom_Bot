@@ -11,6 +11,7 @@ var accountant = require('./routes/accountant');
 var mapRouter = require('./routes/map');
 var logRouter = require('./routes/savecatlog');
 var loginRouter = require('./routes/login');
+var logpageRouter = require('./routes/log');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use('/users', usersRouter);
 app.use('/accountant', accountant);
 app.use('/map', mapRouter);
 app.use('/log', logRouter);
+app.use('/logpage', logpageRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
